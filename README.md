@@ -1,6 +1,3 @@
-# sweetdate
-
-> sweetdate source code
 
 ## Build Setup
 
