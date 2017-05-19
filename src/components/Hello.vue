@@ -1,12 +1,15 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2 v-on:click="privIcrement">{{ privCount }}</h2>
-    <h2 v-on:click="increment">{{ count }}</h2>
-    <h2 @click="changePort">{{ a }}</h2>
-    <h3 @click="navTo">store.state.a.port:{{ port }}</h3>
-    <button @click="actA">action A</button>
-  </div>
+  <transition name="hello">
+    <div class="hello">
+      <h1>{{ msg }}</h1>
+      <h2 v-on:click="privIcrement">{{ privCount }}</h2>
+      <h2 v-on:click="increment">{{ count }}</h2>
+      <h2 @click="changePort">{{ a }}</h2>
+      <h3 @click="navTo">store.state.a.port:{{ port }}</h3>
+      <button @click="actA">action A</button>
+    </div>
+  </transition>
+
 </template>
 
 <script>
@@ -69,5 +72,12 @@
     font-weight: normal;
     color: aquamarine;
   }
+  /*.hello-enter-active, .hello-leave{*/
+    /*transition: all 2s;*/
+  /*}*/
+  /*.hello-enter, .hello-leave-active{*/
+    /*opacity: 0;*/
+  /*}*/
+
 
 </style>

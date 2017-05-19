@@ -1,5 +1,7 @@
+'use strict'
 import routers from './../../router'
 import * as types from './../type'
+import { POST_TEST } from './../../api/moduleA'
 
 const moduleA = {
   state: {
@@ -32,6 +34,7 @@ const moduleA = {
         type: types.ACTION_A
       }).then(() => {
         console.log('ACTION_BBBBBB')
+        POST_TEST()
       })
     }
 

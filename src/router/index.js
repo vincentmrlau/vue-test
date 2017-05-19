@@ -14,7 +14,7 @@ export default new Router({
       component: Hello
     },
     {
-      //  没有匹配路由
+      //  没有匹配的路由
       path: '*',
       name: '404',
       component: notFound
